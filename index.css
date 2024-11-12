@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: monospace;
+    background-color: #0e1111;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    background-color: black;
+}
+
+.nav_a {
+    color: red;
+    font-size: 15px;    padding: 10px;
+    display: inline-block;
+}
+
+.nav ul {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_a:hover {
+    background-color: red;
+    color: black;
+    transition: background-color 0.5s;
+    border-radius: 20px;
+}
+
+main ul {
+    display: inline-block;
+    padding: 30px;
+}
+
+.main_ul li {
+    float: left;
+    clear: left;
+    padding: 20px;
+    background-color: red;
+    margin: 10px;
+    width: 100px;
+    border-radius: 20px;
+    animation-name: main_li_animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.main_div {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.main_a {
+    color: black;
+}
+
+.hi {
+    position: absolute;
+    top: 20%;
+    color: white;
+    left: 53%;
+}
+
+.desc {
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 53%;
+}
+
+.main_jpg {
+    width: 200px;
+    height: 200px;
+    content: url('main.jpg');
+    position: absolute;
+    border-radius: 100px;
+    left: 30%;
+    top: 40%;
+}
+
+.main_jpg:hover {
+    content: url('main_alt.jpg');
+}
+
+
+@keyframes main_li_animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
